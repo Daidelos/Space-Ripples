@@ -1,1 +1,53 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Montserrat, serif;
+}
+
+.flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header {
+  background-color: aquamarine;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: azure;
+}
+
+.category > * {
+  padding: 1.2rem 2rem;
+}
+
+.icons > * {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.logo img {
+  width: 20rem;
+}
+/*# sourceMappingURL=main.css.map */

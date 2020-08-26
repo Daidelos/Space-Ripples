@@ -1,0 +1,236 @@
+.header {
+  width: 100vw;
+  height: 4.2rem;
+  position: fixed;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid rgba(68, 68, 68, 0.2);
+}
+
+.header__category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__category > * {
+  padding: 1.2rem 1.7rem;
+}
+
+.header__category :last-child {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.header__category :last-child:hover {
+  text-decoration: underline;
+}
+
+.header__logo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.header__logo img {
+  width: 21rem;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.icons > * {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.btn {
+  background-color: #567b95;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: .9rem 1.9rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0 .3rem;
+  cursor: pointer;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.btn:hover {
+  background-color: #326891;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Montserrat, serif;
+}
+
+body {
+  position: relative;
+}
+
+.flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 4.2rem;
+}
+
+.article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.article__main-heading {
+  margin: 0 auto;
+  width: 35%;
+  margin-top: 6rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+.article__image {
+  width: 63%;
+  margin-top: 3rem;
+}
+
+.article__image img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.article__image figcaption {
+  display: inline-block;
+  width: 73%;
+  font-size: 1.3rem;
+  color: #5e5e5e;
+  padding: .9rem 0;
+  font-weight: 500;
+}
+
+.article__image figcaption blockquote {
+  display: inline-block;
+  margin-bottom: -21rem;
+  font-size: 1.2rem;
+  color: #a3a3a3;
+}
+
+.article__img-author {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.article__img-author a {
+  color: black;
+  text-decoration: underline;
+  -webkit-text-decoration-color: lightgray;
+          text-decoration-color: lightgray;
+}
+
+.article__img-author a:hover {
+  text-decoration: none;
+}
+
+.article__main-text {
+  width: 32%;
+  margin-top: 3rem;
+}
+
+.article p {
+  font-size: 1.8rem;
+  padding-bottom: 1.8rem;
+  line-height: 2.7rem;
+}
+
+.article p a {
+  color: #326891;
+}
+
+.article p a:link,
+.article p a :visited {
+  color: #326891;
+}
+
+.article p a:hover,
+.article p a :active {
+  text-decoration: none;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
+}
+
+.social__date {
+  font-size: 1.2rem;
+}
+
+.social__items a {
+  color: transparent;
+  padding: 0 .7rem;
+}
+
+.social__items svg {
+  width: 2.5em;
+  height: 2.5rem;
+  background-color: #eeeeee;
+  border-radius: 50%;
+  padding: .5rem;
+}
+
+.social__items svg:hover {
+  background-color: white;
+  border: 1px solid #d1d0d0;
+}
+/*# sourceMappingURL=main.css.map */
