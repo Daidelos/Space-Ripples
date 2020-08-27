@@ -1,0 +1,30 @@
+.footer {
+    margin: 1rem auto 3rem auto;
+    width: 50%;
+
+    @media (max-width: 1800px) {
+        width: 70%;
+
+    }
+
+
+    &__foot {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+        a {
+            flex: 1 1 max-content;
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding-right: 1rem;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}

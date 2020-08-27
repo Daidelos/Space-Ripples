@@ -1,0 +1,137 @@
+.aside {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 70% 25%;
+    grid-template-areas:    "news popular"
+                            "picks popular";
+    grid-gap: 2rem;    
+    width: 50%;
+    margin: 3rem auto;
+    border-bottom: 2px solid lightgray;
+    margin-bottom: .2rem;
+    padding-bottom: 3rem;
+
+    @media (max-width: 1800px) {
+        width: 70%;
+    }
+
+    &__more-news {
+        grid-area: news;
+        border-top: 1px solid black;
+
+        h2 {
+            margin-top: 2rem;
+            a {
+                text-decoration: none;
+                color: black;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &__grid {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1.5rem;
+            margin-top: 2rem;   
+
+        }
+
+    }
+
+    &__editor-picks {
+        grid-area: picks;
+        border-top: 1px solid black;
+        display: grid;
+        grid-template-rows: 3rem 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:    "pic pic pic"
+                                "news news news";
+        grid-gap: 1rem;
+
+        h2 {
+            grid-area: pic;
+            margin-top: 1rem;
+            
+            a {
+                color: black;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+            }
+        }
+
+    }
+
+    &__most-popular {
+        grid-area: popular;
+        border-top: 1px solid black;
+        padding-top: 2rem;
+        padding-left: 1rem;
+
+        h2 {
+            margin-bottom: 2rem;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .popular-headline {
+            display: block;
+            border-top: 1px solid lightgray;
+            padding: 1rem 0;
+            font-weight: 500;
+            font-size: 1.6rem;
+            margin-bottom: .5rem;
+            cursor: pointer;    
+            color: black;
+
+            &:hover {
+                color: #575656;
+            }            
+        }
+    }
+}
+
+.news-grid {
+
+    h2 {
+        font-weight: 500;
+        font-size: 1.6rem;
+        margin-bottom: .5rem;
+        cursor: pointer;
+
+        &:hover {
+            color: #575656;
+        }
+    }
+
+    &__img {
+        
+        cursor: pointer;
+        img {
+            width: 100%;
+        }
+
+        figcaption {
+            float: right;
+            display: block;
+            color: gray;
+            font-size: .9rem;
+        }
+
+        
+    }
+    span {
+        color: gray;
+    }
+
+
+}
